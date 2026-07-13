@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Faculty Preferences</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<h1>Faculty Preferences</h1>
+
+<hr>
+
+<form id="preferenceForm">
+
+<div class="mb-3">
+<input type="number" id="faculty_id" class="form-control" placeholder="Faculty ID" required>
+</div>
+
+<div class="mb-3">
+<select id="morning_preference" class="form-control">
+
+<option>Theory Teaching</option>
+
+<option>Practical Teaching</option>
+
+<option>No Load</option>
+
+<option>Anything</option>
+
+</select>
+</div>
+
+<div class="mb-3">
+
+<select id="lecture_position" class="form-control">
+
+<option>Beginning</option>
+
+<option>Middle</option>
+
+<option>End</option>
+
+</select>
+
+</div>
+
+<div class="mb-3">
+
+<input type="number" id="max_lectures" class="form-control" placeholder="Maximum Lectures">
+
+</div>
+
+<div class="mb-3">
+
+<input type="number" id="max_workload" class="form-control" placeholder="Maximum Workload">
+
+</div>
+
+<div class="mb-3">
+
+<input type="number" id="max_subjects" class="form-control" placeholder="Maximum Subjects">
+
+</div>
+
+<div class="mb-3">
+
+<select id="theory_lab_same" class="form-control">
+
+<option>Yes</option>
+
+<option>No</option>
+
+<option>Not Necessary</option>
+
+</select>
+
+</div>
+
+<div class="mb-3">
+
+<input type="number" id="minimum_gap" class="form-control" placeholder="Minimum Gap">
+
+</div>
+
+<button class="btn btn-primary">
+
+Save Preference
+
+</button>
+
+</form>
+
+<br>
+
+<div id="message"></div>
+
+<hr>
+
+<h3>Preference List</h3>
+
+<table class="table table-bordered" id="preferenceTable">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Faculty</th>
+
+<th>Morning</th>
+
+<th>Position</th>
+
+<th>Lectures</th>
+
+<th>Workload</th>
+
+<th>Subjects</th>
+
+<th>Theory Lab</th>
+
+<th>Gap</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="js/preference.js"></script>
+
+</body>
+
+</html>
